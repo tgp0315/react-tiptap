@@ -8,26 +8,24 @@ import TextBlock from "../Blocks/TextBlock";
 import QuoteBlock from "../Blocks/QuoteBlock";
 import FallbackBlock from "../Blocks/FallbackBlock";
 
-import { BlockType } from "../../types/Block";
+import { BaseBlock } from '../../types/Block';
 
-export interface BlockRendererProps {
-  type: BlockType
-}
+export interface BlockRendererProps extends BaseBlock {}
 
-const BloackRenderer: React.FC<BlockRendererProps> = ({ type }) => {
+const BloackRenderer: React.FC<BlockRendererProps> = ({ type, ...reset}) => {
   switch (type) {
     case 'text':
-      return <TextBlock />
+      return <TextBlock  {...reset}/>
     case 'heading1':
-      return <Heading1Block />
+      return <Heading1Block {...reset}/>
     case 'heading2':
-      return <Heading2Block />
+      return <Heading2Block  {...reset}/>
     case 'heading3':
-      return <Heading3Block />
+      return <Heading3Block  {...reset}/>
     case 'callout':
-      return <CalloutBlock />
+      return <CalloutBlock  {...reset}/>
     case 'quote':
-      return <QuoteBlock />
+      return <QuoteBlock  {...reset}/>
     default:
       return <FallbackBlock />
   }

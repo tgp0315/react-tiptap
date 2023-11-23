@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,4 +36,14 @@
   100% {
     transform: translateY(0px);
   }
+} */
+div {
+  outline: none;
+}
+p {
+  margin: 0;
+}
+.App {
+  width: 960px;
+  margin: 0 auto;
 }
