@@ -1,67 +1,35 @@
 {
-  "name": "react-tiptap",
-  "version": "0.1.0",
+  "name": "root",
   "private": true,
-  "dependencies": {
-    "@reduxjs/toolkit": "^1.9.7",
-    "@tiptap/core": "^2.1.12",
-    "@tiptap/extension-bold": "^2.1.12",
-    "@tiptap/extension-bubble-menu": "^2.1.12",
-    "@tiptap/extension-highlight": "^2.1.12",
-    "@tiptap/extension-italic": "^2.1.12",
-    "@tiptap/extension-strike": "^2.1.12",
-    "@tiptap/extension-underline": "^2.1.12",
-    "@tiptap/pm": "^2.1.12",
-    "@tiptap/react": "^2.1.12",
-    "@tiptap/starter-kit": "^2.1.12",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^17.0.45",
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
-    "dexie": "^3.2.4",
-    "dnd-kit": "^0.0.0-0",
-    "immer": "^10.0.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hotkeys-hook": "^4.4.1",
-    "react-redux": "^8.1.3",
-    "react-router": "^6.18.0",
-    "react-scripts": "5.0.1",
-    "redux": "^4.2.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-config-react-app": "^7.0.0",
+    "lerna": "^5.4.0",
+    "patch-package": "^6.4.7",
+    "typescript": "^5.0.4",
+    "@typescript-eslint/parser": "^5.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.5.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "lerna run --stream --scope @blocknote/example-editor dev",
+    "start:built": "npx serve examples/editor/dist",
+    "build": "lerna run --stream build --concurrency 1",
+    "build:site": "lerna run --stream docs:build --concurrency 1",
+    "lint": "lerna run --stream lint",
+    "bootstrap": "lerna bootstrap --ci -- --force && patch-package",
+    "install-new-packages": "lerna bootstrap -- --force && patch-package",
+    "deploy": "lerna publish -- --access public",
+    "prepublishOnly": "npm run build && cp README.md packages/core/README.md && cp README.md packages/react/README.md",
+    "postpublish": "rm -rf packages/core/README.md && rm -rf packages/react/README.md"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "@babel/plugin-syntax-flow": "^7.23.3",
-    "@babel/plugin-transform-react-jsx": "^7.23.4",
-    "@testing-library/dom": "^9.3.3",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.5.1"
+  "overrides": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "prosemirror-model": "1.18.3"
   }
 }
