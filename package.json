@@ -16,7 +16,7 @@
     "@typescript-eslint/eslint-plugin": "^5.5.0"
   },
   "scripts": {
-    "start": "lerna run --stream --scope @blocknote/example-editor dev",
+    "start": "lerna run --stream --scope example-editor dev",
     "start:built": "npx serve examples/editor/dist",
     "build": "lerna run --stream build --concurrency 1",
     "build:site": "lerna run --stream docs:build --concurrency 1",
