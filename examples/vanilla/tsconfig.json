@@ -16,9 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "composite": true
-    // "paths": {
-    //   "@blocknote/core": ["../../packages/core/src"]
-    // }
   },
   "include": ["src"],
   "references": [

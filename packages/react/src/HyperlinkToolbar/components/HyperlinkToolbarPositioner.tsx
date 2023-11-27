@@ -5,7 +5,7 @@ import {
   DefaultBlockSchema,
   HyperlinkToolbarProsemirrorPlugin,
   HyperlinkToolbarState,
-} from "@blocknote/core";
+} from "@oneself/core";
 import Tippy from "@tippyjs/react";
 import { FC, useEffect, useMemo, useRef, useState } from "react";
 

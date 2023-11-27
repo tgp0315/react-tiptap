@@ -1,4 +1,4 @@
-import { Block, BlockNoteEditor, BlockSchema } from "@blocknote/core";
+import { Block, BlockNoteEditor, BlockSchema } from "@oneself/core";
 import { useState } from "react";
 import { useEditorChange } from "./useEditorChange";
 
