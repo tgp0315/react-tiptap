@@ -4,7 +4,7 @@ import {
   defaultBlockSchema,
   DefaultBlockSchema,
   getDefaultSlashMenuItems,
-} from "@oneself/core";
+} from "../../../core/src";
 import {
   RiH1,
   RiH2,

@@ -1,4 +1,4 @@
-import { BlockNoteEditor, BlockSchema, ToggledStyle } from "@oneself/core";
+import { BlockNoteEditor, BlockSchema, ToggledStyle } from "../../../../../core/src";
 import { useMemo, useState } from "react";
 import { IconType } from "react-icons";
 import {

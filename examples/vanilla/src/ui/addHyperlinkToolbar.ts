@@ -1,4 +1,4 @@
-import { BlockNoteEditor } from "@oneself/core";
+import { BlockNoteEditor } from "../../../../packages/core/src";
 import { createButton } from "./util";
 
 export const addHyperlinkToolbar = (editor: BlockNoteEditor) => {

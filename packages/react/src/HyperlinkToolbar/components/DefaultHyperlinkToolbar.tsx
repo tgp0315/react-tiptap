@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { RiExternalLinkFill, RiLinkUnlink } from "react-icons/ri";
-import { BlockSchema } from "@oneself/core";
+import { BlockSchema } from "../../../../core/src";
 
 import { HyperlinkToolbarProps } from "./HyperlinkToolbarPositioner";
 import { Toolbar } from "../../SharedComponents/Toolbar/components/Toolbar";

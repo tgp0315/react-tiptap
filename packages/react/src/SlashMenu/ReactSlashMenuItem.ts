@@ -2,7 +2,7 @@ import {
   BaseSlashMenuItem,
   BlockSchema,
   DefaultBlockSchema,
-} from "@oneself/core";
+} from "../../../core/src";
 
 export type ReactSlashMenuItem<
   BSchema extends BlockSchema = DefaultBlockSchema

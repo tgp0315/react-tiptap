@@ -3,7 +3,7 @@ import * as _ from "lodash";
 
 import { SlashMenuItem } from "./SlashMenuItem";
 import { SlashMenuProps } from "./SlashMenuPositioner";
-import { BlockSchema } from "@oneself/core";
+import { BlockSchema } from "../../../../core/src";
 
 export function DefaultSlashMenu<BSchema extends BlockSchema>(
   props: SlashMenuProps<BSchema>

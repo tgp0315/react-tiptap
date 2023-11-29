@@ -1,4 +1,4 @@
-import { BlockSchema } from "@oneself/core";
+import { BlockSchema } from "../../../../core/src";
 
 import { FormattingToolbarProps } from "./FormattingToolbarPositioner";
 import { Toolbar } from "../../SharedComponents/Toolbar/components/Toolbar";

@@ -4,7 +4,7 @@ import {
   BlockSchema,
   defaultBlockSchema,
   DefaultBlockSchema,
-} from "@oneself/core";
+} from "../../../core/src";
 import { DependencyList, useMemo, useRef } from "react";
 import { getDefaultReactSlashMenuItems } from "../SlashMenu/defaultReactSlashMenuItems";
 

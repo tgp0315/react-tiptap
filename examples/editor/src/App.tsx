@@ -1,8 +1,8 @@
 // import logo from './logo.svg'
-import "@oneself/core/style.css";
-import { BlockNoteView, useBlockNote } from "@oneself/react";
+import "../../../packages/core/style.css";
+import { BlockNoteView, useBlockNote } from "../../../packages/react/src";
 import styles from "./App.module.css";
-import { uploadToTmpFilesDotOrg_DEV_ONLY } from "@oneself/core";
+import { uploadToTmpFilesDotOrg_DEV_ONLY } from "../../../packages/core/src";
 
 type WindowWithProseMirror = Window & typeof globalThis & { ProseMirror: any };
 

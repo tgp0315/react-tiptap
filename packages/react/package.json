@@ -44,7 +44,6 @@
     "lint": "eslint src --max-warnings 0"
   },
   "dependencies": {
-    "@oneself/core": "^0.0.1",
     "@emotion/react": "^11.10.5",
     "@mantine/core": "^5.6.1",
     "@mantine/hooks": "^5.6.1",

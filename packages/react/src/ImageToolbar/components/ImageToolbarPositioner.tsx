@@ -6,7 +6,7 @@ import {
   DefaultBlockSchema,
   ImageToolbarState,
   SpecificBlock,
-} from "@oneself/core";
+} from "../../../../core/src";
 import Tippy, { tippy } from "@tippyjs/react";
 import { FC, useEffect, useMemo, useRef, useState } from "react";
 

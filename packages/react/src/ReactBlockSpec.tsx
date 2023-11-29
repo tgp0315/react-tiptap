@@ -12,7 +12,7 @@ import {
   PropSchema,
   propsToAttributes,
   render,
-} from "@oneself/core";
+} from "../../core/src";
 import {
   NodeViewContent,
   NodeViewProps,

@@ -1,4 +1,4 @@
-import { BlockNoteEditor, BlockSchema } from "@oneself/core";
+import { BlockNoteEditor, BlockSchema } from "../../../../../core/src";
 import Tippy from "@tippyjs/react";
 import { useEffect, useState } from "react";
 import { RiImageEditFill } from "react-icons/ri";

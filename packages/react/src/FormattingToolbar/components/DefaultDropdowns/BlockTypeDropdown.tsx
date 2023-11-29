@@ -4,7 +4,7 @@ import {
   BlockNoteEditor,
   BlockSchema,
   PartialBlock,
-} from "@oneself/core";
+} from "../../../../../core/src";
 import { IconType } from "react-icons";
 import {
   RiH1,

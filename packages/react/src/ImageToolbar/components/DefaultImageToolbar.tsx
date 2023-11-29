@@ -1,4 +1,4 @@
-import { BlockSchema, PartialBlock } from "@oneself/core";
+import { BlockSchema, PartialBlock } from "../../../../core/src";
 
 import { ImageToolbarProps } from "./ImageToolbarPositioner";
 import { Toolbar } from "../../SharedComponents/Toolbar/components/Toolbar";

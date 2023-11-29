@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
-import { BlockNoteEditor, BlockSchema } from "@oneself/core";
+import { BlockNoteEditor, BlockSchema } from "../../../../../core/src";
 import { RiLink } from "react-icons/ri";
 
 import { ToolbarInputDropdownButton } from "../../../SharedComponents/Toolbar/components/ToolbarInputDropdownButton";

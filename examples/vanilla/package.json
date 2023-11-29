@@ -8,9 +8,6 @@
     "preview": "vite preview",
     "lint": "eslint src --max-warnings 0"
   },
-  "dependencies": {
-    "@oneself/core": "^0.0.1"
-  },
   "devDependencies": {
     "eslint": "^8.10.0",
     "typescript": "^5.0.4",

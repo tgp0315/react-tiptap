@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { BlockSchema } from "@oneself/core";
+import { BlockSchema } from "../../../../../../core/src";
 
 import { DragHandleMenuProps } from "../DragHandleMenu";
 import { DragHandleMenuItem } from "../DragHandleMenuItem";

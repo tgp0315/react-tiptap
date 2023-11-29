@@ -1,4 +1,4 @@
-import { BlockNoteEditor } from "@oneself/core";
+import { BlockNoteEditor } from "../../../packages/core/src";
 import "./index.css";
 import { addSideMenu } from "./ui/addSideMenu";
 import { addFormattingToolbar } from "./ui/addFormattingToolbar";

@@ -1,4 +1,4 @@
-import { BlockSchema } from "@oneself/core";
+import { BlockSchema } from "../../../../../core/src";
 
 import { DragHandleMenu, DragHandleMenuProps } from "./DragHandleMenu";
 import { RemoveBlockButton } from "./DefaultButtons/RemoveBlockButton";

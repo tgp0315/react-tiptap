@@ -4,7 +4,7 @@ import {
   DefaultBlockSchema,
   SlashMenuProsemirrorPlugin,
   SuggestionsMenuState,
-} from "@oneself/core";
+} from "../../../../core/src";
 import Tippy from "@tippyjs/react";
 import { FC, useEffect, useMemo, useRef, useState } from "react";
 

@@ -1,4 +1,4 @@
-import { BlockNoteEditor, BlockSchema } from "@oneself/core";
+import { BlockNoteEditor, BlockSchema } from "../../../core/src";
 import { useEditorContentChange } from "./useEditorContentChange";
 import { useEditorSelectionChange } from "./useEditorSelectionChange";
 

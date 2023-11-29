@@ -3,7 +3,7 @@ import {
   BlockSchema,
   DefaultProps,
   PartialBlock,
-} from "@oneself/core";
+} from "../../../../../core/src";
 import { useCallback, useMemo } from "react";
 import { IconType } from "react-icons";
 import {

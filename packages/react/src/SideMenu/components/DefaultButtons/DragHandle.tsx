@@ -2,7 +2,7 @@ import { Menu } from "@mantine/core";
 import { SideMenuButton } from "../SideMenuButton";
 import { MdDragIndicator } from "react-icons/md";
 import { SideMenuProps } from "../SideMenuPositioner";
-import { BlockSchema } from "@oneself/core";
+import { BlockSchema } from "../../../../../core/src";
 import { DefaultDragHandleMenu } from "../DragHandleMenu/DefaultDragHandleMenu";
 
 export const DragHandle = <BSchema extends BlockSchema>(

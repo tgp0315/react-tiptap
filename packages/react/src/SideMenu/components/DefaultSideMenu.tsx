@@ -1,4 +1,4 @@
-import { BlockSchema } from "@oneself/core";
+import { BlockSchema } from "../../../../core/src";
 
 import { SideMenuProps } from "./SideMenuPositioner";
 import { SideMenu } from "./SideMenu";
