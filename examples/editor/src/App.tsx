@@ -1,5 +1,5 @@
 // import logo from './logo.svg'
-import "../../../packages/core/style.css";
+import "../../../packages/core/src/style.css";
 import { BlockNoteView, useBlockNote } from "../../../packages/react/src";
 import styles from "./App.module.css";
 import { uploadToTmpFilesDotOrg_DEV_ONLY } from "../../../packages/core/src";

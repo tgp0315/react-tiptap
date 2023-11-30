@@ -27,9 +27,4 @@ yarn-error.log*
 
 .idea/
 .vercel
-test-results/
-playwright-report/
 release
-/test-results/
-/playwright-report/
-/playwright/.cache/
